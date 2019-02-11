@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="./images/favicon.ico" />
+		<title>Sentinel Stats</title>
+		<link rel="stylesheet" href="sentinels.css">
+	</head>
+
+  <body>
+
+	<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a class="active" href="heroes.html">Heroes</a></li>
+			<li><a href="villains.html">Villains</a></li>
+			<li><a href="environments.html">Environments</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+			<li><a href="records.html">Records</a></li>
+		</ul>
+	</div>
+
+	<div class="herotext">
+		<p>
+			Use the buttons below to navigate to the deck you're curious about.
+		</p>
+	</div>
+	
+	<div id="htop" class="dnav">
+	<ul>
+		<li><a href="#absolutezero"><img src="./images/absolutezerob.jpg" alt="Absolute Zero"></a></li>
+		<li><a href="#bunker"><img src="./images/bunkerb.jpg" alt="Bunker"></a></li>
+		<li><a href="#fanatic"><img src="./images/fanaticb.jpg" alt="Fanatic"></a></li>
+		<li><a href="#haka"><img src="./images/hakab.jpg" alt="Haka"></a></li>
+		<li><a href="#legacy"><img src="./images/legacyb.jpg" alt="Legacy"></a></li>
+	</ul>
+	<ul>
+		<li><a href="#ra"><img src="./images/rab.jpg" alt="Ra"></a></li>
+		<li><a href="#tachyon"><img src="./images/tachyonb.jpg" alt="Tachyon"></a></li>
+		<li><a href="#tempest"><img src="./images/tempestb.jpg" alt="Tempest"></a></li>
+		<li><a href="#visionary"><img src="./images/visionaryb.jpg" alt="Visionary"></a></li>
+		<li><a href="#wraith"><img src="./images/wraithb.jpg" alt="Wraith"></a></li>
+	</ul>
+	</div>
+	
+	<div class="herotext">
+		<p>
+			Each player picks a <a href="glossary.html#hero">hero</a> at the start of the game. The various heroes 
+			have their own strengths & weaknesses within their deck, as well as 
+			having an innate <a href="glossary.html#power">power</a> to use. Some act in a protective way by taking 
+			damage for their allies, some rely on manipulating the various decks 
+			on the table, while others use their abilities to dish out the damage. 
+			There are cards that heal or do damage to multiple <a href="glossary.html#target">targets</a> at once, so 
+			the math can get a little tricky. In the case of healing it's safe to 
+			assume there will usually be at least three hero targets to heal. When 
+			it comes to damage there will be times when there is only the 
+			supervillain left to attack, or there may be many targets to choose 
+			from, it will all depend on the <a href="glossary.html#enviro">Environment</a> and <a href="glossary.html#villain">Villain</a> chosen and the 
+			tactics your team employs. We can't say for sure from one turn to 
+			another, but we will assume it averages out to three targets available 
+			at any given time.
+		</p>
+	</div>
+
+	<div id="absolutezero" class="herocard">
+		<img src="./images/absolutezero.jpg" alt="Absolute Zero">
+		<p>
+			This is Absolute Zero's deck setup. Zero relies on his equipment to boost and redirect damage, 
+			and uses his own health as a resource. He has a one-shot to get his two modules that allow him 
+			to deal a target cold damage when he takes fire damage and to heal himself for any cold damage he takes.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>13</td>
+				<td>15</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>2</td>
+				<td>2</td>
+				<td>6</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="bunker" class="herocard">
+		<img src="./images/bunker.jpg" alt="Bunker">
+		<p>
+			Bunker relies on his powerful armored suit to protect him, various weapons 
+			to do damage, and his suit's 3 modes that allow him to adapt to the situation 
+			at hand. Turret mode increases damage and allows for using an extra power, at 
+			the cost of playing and drawing cards.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>19</td>
+				<td>9</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>6</td>
+				<td>0</td>
+				<td>11</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="fanatic" class="herocard">
+		<img src="./images/fanatic.jpg" alt="Fanatic">
+		<p>
+			Fanatic is an avenging angel who deals holy damage to her enemies with her 
+			flaming sword. She has a few unique abilities like End of Days that can wipe 
+			out all cards in play and her armor that can bring her back to life if her 
+			hit points ever reach zero.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>5</td>
+				<td>21</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>2</td>
+				<td>5</td>
+				<td>5</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="haka" class="herocard">
+		<img src="./images/Haka.jpg" alt="Haka">
+		<p>
+			Haka strong! Haka crush weak villains! He uses melee weapons and his fists to 
+			take on any opposition. He can absorb attacks for his allies and damage everyone 
+			in play at once. He also has the ability to reduce and heal any damage he takes.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>6</td>
+				<td>18</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>6</td>
+				<td>0</td>
+				<td>14</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="legacy" class="herocard">
+		<img src="./images/legacy.jpg" alt="Legacy">
+		<p>
+			It's a family thing, and Legacy is a tradition in this family. He is all 
+			about buffing up his allies while taking the blows for them as well. He 
+			can still dish it out with the best of them, and can heal his teammates 
+			when they take too many hits.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>28</td>
+				<td>2</td>
+				<td>10</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>11</td>
+				<td>0</td>
+				<td>6</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="ra" class="herocard">
+		<img src="./images/ra.jpg" alt="Ra">
+		<p>
+			Immortal sun god, Ra is all about the fire damage. He can hit multiple 
+			targets, fan his flames to increase his damage, and hit back when he gets 
+			attacked. His only defensive abilities are making himself immune to fire 
+			damage and a stong heal when he finds his staff.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>4</td>
+				<td>18</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>18</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="tachyon" class="herocard">
+		<img src="./images/tachyon.jpg" alt="Tachyon">
+		<p>
+			Tachyon the embodiment of speed. She hits multiple targets with ease and 
+			can play many cards per turn. Bursts of speed let her distract foes by stopping 
+			them from attacking. Damage to individual targets can be a bit weak, so she has 
+			a hard time against villains that reduce damage.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>3</td>
+				<td>29</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>6</td>
+				<td>3</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="tempest" class="herocard">
+		<img src="./images/tempest.jpg" alt="Tempest">
+		<p>
+			The resident alien of the group, Tempest manipulates the weather to hurt his 
+			enemies and heal his friends. He has a few damage types to draw from and powers 
+			that attack all enemies at the same time, with a few options to reduce the damage 
+			he takes and increase his damage output.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>4</td>
+				<td>18</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>8</td>
+				<td>4</td>
+				<td>7</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="visionary" class="herocard">
+		<img src="./images/visionary.jpg" alt="Visionary">
+		<p>
+			Using her psychic powers Visionary can look into her enemies mind and 
+			redirect their attacks where she wants, see the future and stack the 
+			villain deck in her favor, and the unique ability to disappear from 
+			the fight entirely.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>0</td>
+				<td>21</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>7</td>
+				<td>3</td>
+				<td>7</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="wraith" class="herocard">
+		<img src="./images/wraith.jpg" alt="Wraith">
+		<p>
+			Wraith uses her family fortune to develop advanced technology that she uses to 
+			attack evil from the shadows. She can increase her damage, weaken an enemy's 
+			damage, retaliate when attacked, peer into the villain deck to anticipate attacks, 
+			and redirect damage away from her weakened allies.
+		</p>
+		<table class="hdeck">
+			<tr>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#equip">Equipment</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>23</td>
+				<td>15</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th>Has a <a href="glossary.html#power">Power</a></th>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>8</td>
+				<td>5</td>
+				<td>12</td>
+			</tr>
+		</table>
+	</div>
+
+	<a class="ntop" href="#htop">Go to top</a>
+	
+    <p>
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img class="valid" src="images/valid_html5-yellow.gif"  alt="Valid HTML 5" />
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img class="valid" src="images/vcss-blue.gif" alt="Valid CSS" />
+		</a>
+	</p>
+
+	<p><a href="mailto:ewollst0@mail.cpcc.edu">Contact Us</a></p>
+	
+	
+  </body>
+</html>

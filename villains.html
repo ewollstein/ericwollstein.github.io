@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="./images/favicon.ico" />
+		<title>Sentinel Stats</title>
+		<link rel="stylesheet" href="sentinels.css">
+	</head>
+
+  <body>
+	<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="heroes.html">Heroes</a></li>
+			<li><a class="active" href="villains.html">Villains</a></li>
+			<li><a href="environments.html">Environments</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+			<li><a href="records.html">Records</a></li>
+		</ul>
+	</div>
+
+	<div class="viltext">
+		<p>
+			Use the buttons below to navigate to the deck you're curious about.
+		</p>
+	</div>
+	
+	<div id="htop" class="dnav">
+		<ul>
+			<li><a href="#baron"><img src="./images/baronb.jpg" alt="Blade"></a></li>
+			<li><a href="#dawn"><img src="./images/dawnb.jpg" alt="Dawn"></a></li>
+		</ul>
+		<ul>
+			<li><a href="#voss"><img src="./images/vossb.jpg" alt="Grand Warlord Voss"></a></li>
+			<li><a href="#omni"><img src="./images/omnib.jpg" alt="Omnitron"></a></li>
+		</ul>
+	</div>
+	
+	<div class="viltext">
+		<p>
+			Each <a href="glossary.html#villain">villain</a> has a concept unique to their deck. Some focus on brute force attacks 
+			on the <a href="glossary.html#hero">heroes</a>, some use minions or devices to do their dirty work, and some have damage 
+			reduction, <a href="glossary.html#immune">immunity</a>, or redirection. Some villain cards pick on the targets with the 
+			lowest health, some hit the highest, and sometimes they lash out at all non-villain 
+			<a href="glossary.html#target">targets</a>. In the cases of the latter we will assume three heroes, since that's the minimum 
+			needed to play the game. In rare instances an attack may include villain targets as well, 
+			in which case we will increase the number of targets to 4.
+		</p>
+	</div>
+
+	<div id="baron" class="vilcard">
+		<img class="baron" src="./images/baronfront.jpg" alt="Baron Blade" style="width:100%">
+		<img class="baron" src="./images/baronback.jpg" alt="Baron Blade" style="width:100%">
+
+
+<a class="left" onclick="plusDivs(-1)">&#9668;</a>
+<a class="right" onclick="plusDivs(1)">&#9658;</a>
+		<p>
+			Mad scientists love their evil devices, and Baron Blade is no exception. Starting 
+			with his Defense platform in play at the beginning of the game, <a href="glossary.html#hero">heroes</a> cannot damage 
+			him until it is destroyed. He also has lasers and energy cannons to attack the heroes 
+			for lots of damage if they aren't <a href="glossary.html#destroy">destroyed</a> quickly.
+		</p>
+		<table class="vdeck">
+			<tr>
+				<th>Starting Cards</th>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>4</td>
+				<td>10</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Targets</a></th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>9</td>
+				<td>2</td>
+				<td>11</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="dawn" class="vilcard">
+		<img src="./images/dawnfront.jpg" alt="Citizen Dawn">
+		<p>
+			Citizen Dawn is one of the most powerful beings in existence, and she knows it. 
+			She's amassed a small army of other super-powered people to help her in her goal 
+			to take her rightful place as ruler of the Earth. These allies work as teams to 
+			have additional abilities when their partner is in the field.
+		</p>
+		<table class="vdeck">
+			<tr>
+				<th>Starting Cards</th>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>6</td>
+				<td>6</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Targets</a></th>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>2</td>
+				<td>4</td>
+				<td>13</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="voss" class="vilcard">
+		<img src="./images/vossfront.jpg" alt="Grand Warlord Voss">
+		<p>
+			Grand Warlord Voss is a galactic conqueror and he is bringing his forces to Earth next. 
+			He has two deadly warships and many soldiers to use in his assault. The minions each 
+			deal a damage type that they are <a href="glossary.html#immune">immune</a> to and the captains rally troops to increase 
+			damage output.
+		</p>
+		<table class="vdeck">
+			<tr>
+				<th>Starting Cards</th>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>3</td>
+				<td>0</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Targets</a></th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>17</td>
+				<td>1</td>
+				<td>22</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="omni" class="vilcard">
+		<img src="./images/omnifront.jpg" alt="Omnitron">
+		<p>
+			Omnitron is an advanced robotics factory who's A.I. decided the world would be better 
+			if Omnitron were in charge. It has many drones to either attack enemies or to repair 
+			itself. Omnitron also has a shield that reacts & makes him <a href="glossary.html#immune">immune</a> to the last type 
+			of damage dealt to him.
+		</p>
+		<table class="vdeck">
+			<tr>
+				<th>Starting Cards</th>
+				<th><a href="glossary.html#ongoing">Ongoing</a></th>
+				<th><a href="glossary.html#oneshot">One-shot</a></th>
+				<th>Does Damage</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>8</td>
+				<td>6</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>Heals</th>
+				<th>Damage Reduction</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Targets</a></th>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>2</td>
+				<td>6</td>
+				<td>11</td>
+			</tr>
+		</table>
+	</div>
+	
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("baron");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+ 
+ 
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+	
+    <p>
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img class="valid" src="images/valid_html5-yellow.gif"  alt="Valid HTML 5" />
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img class="valid" src="images/vcss-blue.gif" alt="Valid CSS" />
+		</a>
+	</p>
+
+	<p><a href="mailto:ewollst0@mail.cpcc.edu">Contact Us</a></p>
+	
+</body>
+</html>

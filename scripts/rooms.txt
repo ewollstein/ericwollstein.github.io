@@ -1,0 +1,14 @@
+Guest Bedroom
+10
+15.5
+3
+
+Master Bedroom
+16
+16.25
+2
+
+Living Room
+30
+25
+1

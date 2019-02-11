@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="./images/favicon.ico" />
+		<title>Sentinel Stats</title>
+		<link rel="stylesheet" href="sentinels.css">
+	</head>
+
+  <body>
+	<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="heroes.html">Heroes</a></li>
+			<li><a href="villains.html">Villains</a></li>
+			<li><a href="environments.html">Environments</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+			<li><a class="active" href="records.html">Records</a></li>
+		</ul>
+	</div>
+
+	<div class="glossary">
+		<p>
+			Use this form to submit your wins & losses so we can keep an updated table 
+			for those records to see if certain heroes are stronger or weaker against 
+			some villains or in some environments.
+		</p>
+		<form action="mailto:ewollst0@mail.cpcc.edu" method="post" enctype="text/plain">
+			<br>
+			<input type="radio" name="result" value="won" checked> Won
+			<input type="radio" name="result" value="lost"> Lost
+			<br><br>
+			<label>Villain:</label>
+				<br>
+				<input list="villist" name="villain" required>
+				<datalist id="villist">
+					<option value="Baron Blade">
+					<option value="Citizen Dawn">
+					<option value="Grand Warlord Voss">
+					<option value="Omnitron">
+				</datalist>
+								<br><br>
+			<label>Environment:</label>
+				<br>
+				<input list="envlist" name="env" required>
+				<datalist id="envlist">
+					<option value="Insula Primalis">
+					<option value="Megalopolis">
+					<option value="Ruins of Atlantis">
+					<option value="Wagner Mars Base">
+				</datalist>
+				<br><br>
+			<label>Heroes:</label>
+				<br>
+				<input list="heroes" name="hero1" required>
+				<br><br>
+				<input list="heroes" name="hero2" required>
+				<br><br>
+				<input list="heroes" name="hero3" required>
+				<br><br>
+				<input list="heroes" name="hero4">
+				<br><br>
+				<input list="heroes" name="hero5">
+				<br><br>
+				<datalist id="heroes">
+					<option value="Absolute Zero">
+					<option value="Bunker">
+					<option value="Fanatic">
+					<option value="Haka">
+					<option value="Legacy">
+					<option value="Ra">
+					<option value="Tachyon">
+					<option value="Tempest">
+					<option value="Visionary">
+					<option value="Wraith">
+				</datalist>
+			<input type="submit">
+			<br><br>
+		</form>
+		<br><br>
+	</div>
+	
+    <p>
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img class="valid" src="images/valid_html5-yellow.gif"  alt="Valid HTML 5" />
+		</a>
+    	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img class="valid" src="images/vcss-blue.gif" alt="Valid CSS" />
+		</a>
+	</p>
+
+	<p><a href="mailto:ewollst0@mail.cpcc.edu">Contact Us</a></p>
+	
+</body>
+</html>

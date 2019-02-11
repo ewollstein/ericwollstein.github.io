@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="./images/favicon.ico" />
+		<title>Sentinel Stats</title>
+		<link rel="stylesheet" href="sentinels.css">
+	</head>
+
+  <body>
+	<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="heroes.html">Heroes</a></li>
+			<li><a href="villains.html">Villains</a></li>
+			<li><a class="active" href="environments.html">Environments</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+			<li><a href="records.html">Records</a></li>
+		</ul>
+	</div>
+	
+	<div class="envtext">
+		<p>
+			Use the buttons below to navigate to the deck you're curious about.
+		</p>
+	</div>
+	
+	<div class="dnav" id="htop">
+		<ul>
+			<li><a href="#primalis"><img src="./images/primalisb.jpg" alt="Insula Primalis"></a></li><li>
+			<a href="#mega"><img src="./images/megab.jpg" alt="Megalopolis"></a></li>
+		</ul>
+		<ul class="dnav">
+			<li><a href="#atlantis"><img src="./images/atlantisb.jpg" alt="Ruins of Atlantis"></a></li>
+			<li><a href="#wagner"><img src="./images/wagnerb.jpg" alt="Wagner Mars Base"></a></li>
+		</ul>
+	</div>
+	
+	<div class="envtext">
+		<p>
+			Each <a href="glossary.html#enviro">environment</a> has its own theme and style. Some help the <a href="glossary.html#hero">heroes</a> more, 
+			some help the <a href="glossary.html#villain">villain</a>, and others play no favorites. In cases where a 
+			card deals damage to a specific number of targets we can calculate damage 
+			easily, but some cards do damage to all non-environment targets, so in 
+			those instances we can assume there are the minimum three heroes and one 
+			villain, so a conservative estimate of four targets was used. There are 
+			rare times when an environment card strikes all targets, so if that card 
+			is a <a href="glossary.html#target">target</a> (meaning it has health) we 
+			will increase the count to 5.
+		</p>
+	</div>
+	
+	<div id="primalis" class="envcard">
+		<img src="./images/primalis.jpg" alt="Insula Primalis">
+		<p>
+			Insula Primalis is a savage jungle, complete with dinosaurs who attack <a href="glossary.html#hero">heroes</a> 
+			and villains alike! Pterodactyls will steal your equipment, raptors attack as 
+			a group, and a T-Rex goes after the biggest meal it can find. There's the chance 
+			a volcano will erupt & burn everyone and the field of obsidian glass it leaves 
+			behind will increase the damage everyone takes.
+		</p>
+		<table class="edeck">
+			<tr>
+				<th>Single Turn</th>
+				<th>Does Damage</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Target</a></th>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>12</td>
+				<td>6</td>
+				<td>7</td>
+			</tr>
+			</table>
+	</div>
+
+	<div id="mega" class="envcard">
+		<img src="./images/mega.jpg" alt="Megalopolis">
+		<p>
+			This time the fight breaks out downtown and there are civilians in harm's way. 
+			The police are on scene to help, but they're outmatched and its up to the <a href="glossary.html#hero">heroes</a> 
+			to pick up the slack. In such tight quarters the heroes get restricted & can't 
+			use the full range of their abilities on this battlefield.
+		</p>
+		<table class="edeck">
+			<tr>
+				<th>Single Turn</th>
+				<th>Does Damage</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Target</a></th>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>8</td>
+				<td>4</td>
+				<td>4</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="atlantis" class="envcard">
+		<img src="./images/atlantis.jpg" alt="Ruins of Atlantis">
+		<p>
+			Fighting in an underwater city can be difficult, there are flooded hallways, 
+			tentacles from the deep, and crumbling statues. There are a few helpful secrets 
+			in store as well, like a room that increases healing and another that lets everyone 
+			<a href="glossary.html#play">play</a> a card for free.
+		</p>
+		<table class="edeck">
+			<tr>
+				<th>Single Turn</th>
+				<th>Does Damage</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Target</a></th>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>11</td>
+				<td>0</td>
+				<td>5</td>
+			</tr>
+		</table>
+	</div>
+		
+	<div id="wagner" class="envcard">
+		<img src="./images/wagner.jpg" alt="Wagner Mars Base">
+		<p>
+			Baron Blade's personal offworld facility, Wagner Mars Base is not there to 
+			make life easy for the <a href="glossary.html#hero">heroes</a>. There are defenses in place, including a self 
+			destruct mechanism and the fighting causing places in the base to explode. 
+			Thankfully there aren't many things attacking heroes directly, but the heroes 
+			will have their hands full with the obstacles they'll face here.
+		</p>
+		<table class="edeck">
+			<tr>
+				<th>Single Turn</th>
+				<th>Does Damage</th>
+				<th>Destroy Card Type</th>
+				<th><a href="glossary.html#target">Target</a></th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+			</tr>
+		</table>
+	</div>
+	
+    <p>
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img class="valid" src="images/valid_html5-yellow.gif"  alt="Valid HTML 5" />
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img class="valid" src="images/vcss-blue.gif" alt="Valid CSS" />
+		</a>
+	</p>
+
+	<p><a href="mailto:ewollst0@mail.cpcc.edu">Contact Us</a></p>
+	
+</body>
+</html>
